@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form</title>
+</head>
+
+<body>
+
+    <div class="my-5 mx-6 p-5" style="background: #546e7a;">
+        <p class="is-flex is-justify-content-center" style="color: white;">Soumission des candidatures au master pour
+            les étudiants externes à la faculté d'Electronique
+            et Informatique
+        </p>
+    </div>
+
+    <div class="mx-2 p-3" style="background: #d9edf7;">
+        <div class="p-1" style="background: white;">
+            <P style="color: #546e7a;">
+                Ce formulaire est destiné à collecter les renseignements du candidat pour l'accès au master de la
+                faculté
+                d'Electronique et d'informatique de l'USTHB.
+            </P>
+        </div>
+    </div>
+
+    <form id="form">
+
+        <div class="is-flex mx-6 my-4">
+            <p class="mx-3 b w">Formation souhaitée en master</p>
+            <div class="select">
+                <select style="background-color: white ; color: black; width: 500px;" id="formation-master">
+                    <option>Veuillez choisir une formation</option>
+                    <option>With options</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="is-flex is-justify-content-center mx-4 mt-6 p-2" style="background: #d9edf7;">
+            <p class="has-text-weight-bold" style="color: #3f81a2;">Renseignements Administratifs</p>
+        </div>
+
+        <div class="is-flex mx-6 my-4">
+            <p class="mx-3 b w">Nom</p>
+            <div class="input-container">
+                <input type="text" placeholder="" class="custom-input" id="nom">
+            </div>
+        </div>
+
+        <div class="is-flex mx-6 my-4">
+            <p class="mx-3 b w">Prenom</p>
+            <div class="input-container">
+                <input type="text" placeholder="" class="custom-input" id="prenom">
+            </div>
+        </div>
+
+        <div class="is-flex mx-6 my-4">
+            <p class="mx-3 b w">Date de naissance</p>
+            <div class="input-container">
+                <input type="date" class="custom-input" id="date-of-birth">
+            </div>
+        </div>
+
+        <div class="is-flex mx-6 mb-4 mt-5">
+            <p class="mx-3 b w">Wilaya</p>
+            <div class="select">
+                <select style="background-color: white ; color: black; width: 300px;" id="wilaya">
+                    <option>Veuillez choisir la wilaya</option>
+
+                    <option>01 - Adrar</option>             <option>02 - Chlef</option>
+                    <option>03 - Laghouat</option>          <option>04 - Oum El Bouaghi</option>
+                    <option>05 - Batna</option>             <option>06 - Béjaïa</option>
+                    <option>07 - Biskra</option>            <option>08 - Béchar</option>
+                    <option>09 - Blida</option>             <option>10 - Bouira</option>
+                    <option>11 - Tamenrasset</option>       <option>12 - Tébessa</option>
+                    <option>13 - Tlemcen</option>           <option>14 - Tiaret</option>
+                    <option>15 - Tizi-Ouzou</option>        <option>16 - Alger</option>
+                    <option>17 - Djelfa</option>            <option>18 - Jijel</option>
+                    <option>19 - Sétif</option>             <option>20 - Saida</option>
+                    <option>21 - Skikda</option>            <option>22 - Sidi-Bel-Abbès</option>
+                    <option>23 - Annaba</option>            <option>24 - Guelma</option>
+                    <option>25 - Constantine</option>       <option>26 - Médéa</option>
+                    <option>27 - Mostaganem</option>        <option>28 - M'Sila</option>
+                    <option>29 - Mascara</option>           <option>30 - Ouargla</option>
+                    <option>31 - Oran</option>              <option>32 - El-Bayadh</option>
+                    <option>33 - Illizi</option>            <option>34 - Bordj-Bou-Arreridj</option>
+                    <option>35 - Boumerdès</option>         <option>36 - El-Tarf</option>
+                    <option>37 - Tindouf</option>           <option>38 - Tissemsilt</option>
+                    <option>39 - El-Oued</option>           <option>40 - Khenchela</option>
+                    <option>41 - Souk-Ahras</option>        <option>42 - Tipaza</option>
+                    <option>43 - Mila</option>              <option>44 - Aïn-Defla</option>
+                    <option>45 - Naâma</option>             <option>46 - Aïn-Tèmouchent</option>
+                    <option>47 - Ghardaia</option>          <option>48 - Relizane</option>
+                    <option>49 - Timimoun</option>          <option>50 - Bordj Badji Mokhtar</option>
+                    <option>51 - Ouled Djellal</option>     <option>52 - Bèni Abbès</option>
+                    <option>53 - Salah</option>             <option>54 - Guezzam</option>
+                    <option>55 - Touggourt</option>         <option>56 - Djanet</option>
+                    <option>57 - El M'Ghair</option>        <option>58 - El Meniaa</option>
+
+                </select>
+            </div>
+        </div>
+
+        <div class="is-flex mx-6 my-4">
+            <p class="mx-3 b w">Address actuelle</p>
+            <div class="input-container">
+                <input type="text" placeholder="" class="custom-input" id="address">
+            </div>
+        </div>
+
+        <div class="is-flex mx-6 my-4">
+            <p class="mx-3 b w">Code Postal</p>
+            <div class="input-container">
+                <input type="text" placeholder="" class="custom-input" id="code-postal">
+            </div>
+        </div>
+
+        <div class="is-flex mx-6 my-4">
+            <p class="mx-3 b w">N° Tel</p>
+            <div class="input-container">
+                <input type="text" placeholder="" class="custom-input" id="phone-number">
+            </div>
+        </div>
+
+        <div class="is-flex mx-6 my-4">
+            <p class="mx-3 b w">Email</p>
+            <div class="input-container">
+                <input type="email" placeholder="" class="custom-input" id="email">
+            </div>
+        </div>
+
+        <div class="is-flex is-justify-content-center mx-4 mt-6 p-2" style="background: #d9edf7;">
+            <p class="has-text-weight-bold" style="color: #3f81a2;">Renseignements Pédagogiques : Période scolaire</p>
+        </div>
+
+        <div class="is-flex mx-6 my-4">
+            <p class="mx-3 b w">Matricule de BAC</p>
+            <div class="input-container">
+                <input type="text" placeholder="" class="custom-input" id="matricule-bac">
+            </div>
+        </div>
+
+        <div class="is-flex mx-6 my-4">
+            <p class="mx-3 b w">Année de BAC</p>
+            <div class="input-container">
+                <input type="text" placeholder="" class="custom-input" id="annee-bac">
+            </div>
+        </div>
+
+        <div class="is-flex mx-6 my-4">
+            <p class="mx-3 b w">Moyenne de BAC</p>
+            <div class="input-container">
+                <input type="number" placeholder="" class="custom-input" id="moyenne-bac">
+            </div>
+        </div>
+
+        <div class="is-flex mx-6 my-4">
+            <p class="mx-3 b w">Serie du BAC</p>
+            <div class="input-container">
+                <input type="text" placeholder="" class="custom-input" id="serie-bac">
+            </div>
+        </div>
+
+        <div class="is-flex mx-6 mb-4 mt-5">
+            <p class="mx-3 b w">Mention du BAC</p>
+            <div class="select">
+                <select style="background-color: white ; color: black; width: 300px;" id="mention-bac">
+                    <option>Veuillez choisir un mention</option>
+                    <option>With options</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="is-flex is-justify-content-center mx-4 mt-6 p-2" style="background: #d9edf7;">
+            <p class="has-text-weight-bold" style="color: #3f81a2;">Renseignements Pédagogiques : Période universitaire</p>
+        </div>
+
+        <div class="is-flex mx-6 my-4">
+            <p class="mx-3 b w">Matricule</p>
+            <div class="input-container">
+                <input type="text" placeholder="" class="custom-input" id="matricule">
+            </div>
+        </div>
+
+        <div class="is-flex mx-6 mb-4 mt-5">
+            <p class="mx-3 b w">Nature du diplome</p>
+            <div class="select">
+                <select style="background-color: white ; color: black; width: 300px;" id="nature-diplome">
+                    <option>Veuillez choisir une option</option>
+                    <option>With options</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="is-flex mx-6 my-4">
+            <p class="mx-3 b w">Domaine</p>
+            <div class="input-container">
+                <input type="text" placeholder="" class="custom-input" id="domaine">
+            </div>
+        </div>
+
+        <div class="is-flex mx-6 my-4">
+            <p class="mx-3 b w">Fillère</p>
+            <div class="input-container">
+                <input type="text" placeholder="" class="custom-input" id="filliere">
+            </div>
+        </div>
+
+        <div class="is-flex mx-6 my-4">
+            <p class="mx-3 b w">Spécialité</p>
+            <div class="input-container">
+                <input type="text" placeholder="" class="custom-input" id="specialite">
+            </div>
+        </div>
+
+        <div class="is-flex mx-6 my-4">
+            <p class="mx-3 b w">Niveau ou année d'etude</p>
+            <div class="input-container">
+                <input type="text" placeholder="" class="custom-input" id="niveau-etude">
+            </div>
+        </div>
+
+        <div class="is-flex mx-6 my-4">
+            <p class="mx-3 b w">Date du dernier semestre théorique</p>
+            <div class="input-container">
+                <input type="date" class="custom-input" id="dernier-semestre">
+            </div>
+        </div>
+
+        <div class="is-flex mx-6 my-4">
+            <p class="mx-3 b w">Date de soutenance du PFE</p>
+            <div class="input-container">
+                <input type="date" class="custom-input" id="soutenance-pfe">
+            </div>
+        </div>
+
+        <div class="is-flex is-justify-content-center mx-4 mt-6 p-2" style="background: #d9edf7;">
+            <p class="has-text-weight-bold" style="color: #3f81a2;">Veuillez télé-verser les fichiers suivants : - La taille
+                des fichiers ne doit pas dépasser 2 MO. - Le format des fichiers doit etre en pdf.
+            </p>
+        </div>
+
+        <div class="is-flex mx-6 my-4">
+            <p class="has-text-weight-bold mx-3 b w">Annexe descriptive du diplôme :</p>
+            <div class="">
+                <input type="file" class="">
+            </div>
+        </div>
+
+        <div class="is-flex mx-6 my-4">
+            <p class="has-text-weight-bold mx-3 b w">Attestation de classement :</p>
+            <div class="">
+                <input type="file" class="">
+            </div>
+        </div>
+
+        <div class="is-flex mx-6 my-4">
+            <p class="has-text-weight-bold mx-3 b w">Copie du relevé du BAC :</p>
+            <div class="">
+                <input type="file" class="">
+            </div>
+        </div>
+
+        <div class="is-flex mx-6 my-4">
+            <p class="has-text-weight-bold mx-3 b w">Les relevés des notes de licence (L1, L2. L3) :</p>
+            <div class="">
+                <input type="file" class="">
+            </div>
+        </div>
+
+        <div class="is-flex mx-6 my-4">
+            <p class="has-text-weight-bold mx-3 b w">Copie du diplôme de Licence :</p>
+            <div class="">
+                <input type="file" class="">
+            </div>
+        </div>
+
+        <div class="is-flex mx-6 my-4">
+            <p class="has-text-weight-bold mx-3 b w">Extrait de naissance :</p>
+            <div class="">
+                <input type="file" class="">
+            </div>
+        </div>
+
+        <div class="mx-6 mb-6">
+            <div class="captcha-container">
+                <p><strong>Seul rôle</strong><br>
+                    Veuillez saisir le texte affiché
+                </p>
+
+                <div class="captcha-display noselect" id="captchaText">A7B9C2</div>
+
+                <div>
+                    <input type="text" id="captchaInput" placeholder="Saisissez le texte ci-dessus">
+                    <button class="mt-2" onclick="validateCaptcha(event)" id="valider">Valider</button>
+                </div>
+
+                <p id="captchaMessage" style="color: red; display: none;">Le texte saisi ne correspond pas. Veuillez
+                    réessayer.
+                </p>
+            </div>
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="validationCheckbox">
+                <label for="validationCheckbox">J'atteste sur l'honneur l'exactitude des renseignements portés sur la
+                    présente demande.<span class="required">*</span>
+                </label>
+            </div>
+
+            <div>
+                
+            </div>
+
+            <button type="submit" id="submit-btn">Submit</button>
+        </div>
+
+    </form>
+
+    <script>
+        function generateCaptcha() {
+            const chars = "ABCDEFGHJKLMNPQRSTUVWXYZabcdefghjkmnpqrstuvwxyz123456789";
+            let captcha = "";
+            for (let i = 0; i < 6; i++) {
+                captcha += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            document.getElementById("captchaText").textContent = captcha;
+            return captcha;
+        }
+
+        let currentCaptcha = generateCaptcha();
+
+        function validateCaptcha(event) {
+            const userInput = document.getElementById("captchaInput").value;
+            const message = document.getElementById("captchaMessage");
+
+            if (userInput === currentCaptcha) {
+                message.style.display = "none";
+                alert("CAPTCHA validé avec succès!");
+            } else {
+                message.style.display = "block";
+                currentCaptcha = generateCaptcha();
+            }
+        }
+    </script>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
